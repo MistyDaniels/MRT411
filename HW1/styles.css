@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("images/stars.jpg");
+    background-image: url("images/stars2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@ body {
     text-align: center;
     width: 75%;
     min-width: 300px;
-    background-color: rgba(210, 210, 210, 0.8);
+    background-color: rgba(255, 223, 0, 0.8);
 
 }
 
@@ -38,7 +38,7 @@ body {
 .hero {
     height: 100vh;
     min-height: 740px;
-    background-image: url("images/stars2.jpg");
+    background-image: url("images/stars.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ body {
     margin-right: 1em;
     padding: 2em;
     text-align: center;
-    background-color: rgba(120, 120, 120, 0.7);
+    background-color: rgba(25, 75, 100, 0.7);
 }
 
 .title h1 {
@@ -92,13 +92,13 @@ body {
     padding: 0.5em 1em;
     margin: 0 0.5em;
     text-align: center;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #FFD100;
     border-width: 1px 0;
 }
 
 .hero .nav-item:hover {
     color: #fff;
-    background-color: rgba(207, 200, 222, 0.5);
+    background-color: rgba(185, 189, 223, 0.5);
 }
 
 
@@ -152,6 +152,8 @@ body {
     flex-grow: 1;
     justify-content: space-around;
 }
+
+
 .menu .menu-group {
     padding: 1em;
     min-width: 300px;
