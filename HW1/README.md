@@ -7,3 +7,15 @@ I was unfamiliar with certain components that I had never learned about;
 Such as Parallax like scrolling.
 I was able to use an old repo for reference from my previous class, which
 actually came in handy as well.
+
+
+1/21/20 UPDATE
+
+Altered some of the links that I had messed up. I also fixed some minor
+text errors and played around with colors that would better match the aesthetic
+that I'm going for.
+Just a some tidying up here and there.
+This week was a little difficult for personal reasons so hopefully I can start
+on something a little more unique as time progresses.
+
+I did have some trouble trying to realign my title background. Despite trying to center it kept expanding beyond parameters that I had set in a web based CSS and HTML tester I was using. I settled on setting it to the left, but it continued to have the same issue. I'll continue to mess with it as time goes by.
