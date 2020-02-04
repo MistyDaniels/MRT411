@@ -1,77 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+  <head>
 
-<head>
+    <title>Choose Your Own Adventure!</title>
+
     <meta charset="utf-8">
-    <style>body{background-color: #372c57;}</style>
-    <title>Misty Daniels</title>
-    <meta name="author" content="Misty Daniels`">
+    <meta name="description" content="MART 441 Week 3">
+    <meta name="author" content="Misty Daniels">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet" rel="stylesheet">
-    <link rel="stylesheet" href="./HW1/styles.css">
-    <script src="HW1/script.js"></script>
-</head>
 
-<body>
+    <link rel="stylesheet" href="HW3/styles.css">
 
-    <div class="hero">
-        <div class="title">
-            <h1>Misty Daniels</h1>
-            <h2>MART 441</h2>
-            <h2>Homework Site</h2>
-            <div class="nav">
-                <a href="#info">
-                    <div class="nav-item">Info</div>
-                </a>
-                <a href="#about-misty">
-                    <div class="nav-item">Education</div>
-                </a>
-                <a href="https://mistydaniels.github.io/MRT411/">
-                    <div class="nav-item">"Professional" Website</div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--end hero-->
+      <script src="/script.js">
 
-    <div id="info">
-        <div class="description-container">
-            <div class="description">
+      </script>
 
-                <h1>Misty Daniels</h1>
-                <h3>Caŋté Waśaka Wíŋ</h3>
-                <h4>Brave Hearted Woman</h4>
-                <p>Misty Daniels is a Native American student, artist, gamer and creator.</p>
-                <p>Her passion is the pursuit of growth and rediscovery in regards to her Lakota roots. </p>
-                <p>She believes that the path to her peoples recovery requires the union of traditional and contemporary methods.</p>
+  </head>
 
-            </div>
-        </div>
-    </div>
-    <!-- End Parallax-Like -->
-
-    <div class="menu" id="about-misty">
-        <h2>About Misty</h2>
-        <div class="menu-group-container">
-
-            <div class="menu-group">
-
-                <div class="menu-head">About Misty</div>
-                <div>
-                    <div class="menu-item">Misty has spent most of her life on the Fort Peck Reservation in the far north-east corner of Montana. She recieved her AA in Computer Technology from the Fort Peck Tribes Community College in 2015.</div>
-                    <div class="menu-item">She would go on to enroll in the University of Montana in 2018 and recieved her BA in Media Arts in 2020.</div>
-                </div>
-            </div>
+  <body>
 
 
-            <div class="menu-group">
+<!--onClick code from https://www.w3schools.com/jsref/event_onclick.asp-->
 
-              <div class="menu-head">Why Work With Misty</div>
-              <div>
-                  <div class="menu-item">Misty's tradition background and modern education offers a unique perspective to todays design. Her will to bring everything she can to the table and desire to exceed expectations through learned skill and passion for growth brings opportunity to those she works with.</div>
-            </div>
-          </div>
-    </div> <!-- End Menu -->
+      <div class="container-fluid" id="storyIntro">
+        <p>You awaken to darkness. A blindfold blocks your vision, but by the jarring rocking motion
+          you are aware of the fact youre seated within a moving cart. The air is crisp and you can hear the
+          hushed whispers of others around you.</p>
 
-</body>
+<!--Story Progression 1!-->
+  <button onclick="choice1()" type="button" class="btn-warning btn-lg" id="blindFold">Remove your blindfold?</button>
+  <button onclick="choice2()" type="button" class="btn-warning btn-lg" id="blindFold2">Leave your blindfold?</button>
+
+      </div>
+
+<!--If Removed!-->
+      <div id="storyPart2">
+        <p>You remove the blindfold, but find that your wrists and ankles are shackled together.
+          The commotion has alerted your companions of your regained awareness.</p>
+        <p>Ralof: Hey, you. You're finally awake. You were trying to cross the border,
+right? Walked right into that Imperial ambush, same as us, and that
+thief over there.</p>
+        <p>You glance to your side to see a skittish thief seated beside you.</p>
+        <p>Lokir: Damn you Stormcloaks. Skyrim was fine until you came along. Empire was
+nice and lazy. If they hadn't been looking for you, I could've stolen
+that horse and been half way to Hammerfell. You there. You and me -- we
+should be here. It's these Stormcloaks the Empire wants.</p>
+        <p>After a short conversation you arrive in a small village. The Imperials have decided your
+           fate. You are sentenced to death.</p>
+
+<!--Story Progression 2 Removed blindfold!-->
+             <button onclick="choice3()" type="button" class="btn-warning btn-lg" id="run">Run?</button>
+             <button onclick="choice4()" type="button" class="btn-warning btn-lg" id="faceIt">Face your fate?</button>
+
+
+<!--Story Progression 3 removed blindfold + Facing fate!-->
+
+<div id="storyPart3">
+    <p>Lokir the thief tries to flee when the lot is sentences to death. He is swiftly
+  shot through with Imperial arrows.</p>
+    <p>You resign yourself to your fate with the Stormcloaks and place your head upon the slab.</p>
+    <p>A dull roar can be heard growing in the distance.</p>
+    <p>Alduin perches himself upon the spires roof, his weight shaking the earth beneath him.</p>
+    <p>His sudden appearance and the fire pouring from his mouth halt the execution, everyone flees for their life.</p>
+    <br>
+    <p>Ralof cuts your bonds and you make your escape to begin your journey as the Dragon Born.</p>
+
+<!--Story Progression 2 remain blindfolded!-->
+
+  <div id="badStoryPart2">
+    <p>You decide to leave your blindfold.</p>
+    <p>Whatever trouble you're already in isnt worth making worse.</p>
+    <p>The rest of the group keeps their voices down, too low for you to hear.</p>
+    <p>The cart stops and you are suddenly pulled from it.</p>
+    <p>Its difficult to determine what is going on, but someone is shouting orders. It sounds as though
+      you are in a great deal of trouble.</p>
+
+      <button onclick="choice3()" type="button" class="btn-warning btn-lg" id="run">Run?</button>
+      <button onclick="choice4()" type="button" class="btn-warning btn-lg" id="faceIt">Face your fate?</button>
+
+<!--Story Progression 3 Run!-->
+
+  <div id="badStorypart3">
+      <p>Your adrenaline pumps in your ears.</p>
+      <p>Before things can escalate you break into a spring, still bound.</p>
+      <p>You run a few yards before Imperial arrows pierce your back.</p>
+      <p>You hear someone call you a coward before everything fades to black</p>
+      <p>...</p>
+
+
+  </body>
+
 </html>
