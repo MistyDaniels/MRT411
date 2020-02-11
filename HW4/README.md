@@ -20,4 +20,6 @@ drawing a simple graph so I can maintain some kind of order.
 I still cant figure out why my text box isn't working. I'll take a break and come back to it later.
 For now I'll just continue to add the rest of my content.
 
-I've added a little more but its really bothering me. Its a little late to be bugging anyone about it so I've tried going over the example provided. Everything seems to check out; I have a feeling its something frustratingly small. 
+I've added a little more but its really bothering me. Its a little late to be bugging anyone about it so I've tried going over the example provided. Everything seems to check out; I have a feeling its something frustratingly small.
+
+I almost forgot to add the other button options to all of my routes!

@@ -8,17 +8,17 @@
     <script>
       function getChoice1()
         {
-          var myChoice = document.getElementByID("choice").value;
-          var myQuestion = document.getElementByID("question");
+          var myChoice = document.getElementById("choice").value;
+          var myQuestion = document.getElementById("question");
           if(myChoice === "Remove")
             {
-              document.getElementByID("choice").style.display="none";
-              document.getElementByID("btnSubmit").style.display="none";
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
 
-              document.getElementByID("choice2").style.display="block";
-              document.getElementByID("btnSubmit2").style.display="block";
+              document.getElementById("choice2").style.display="block";
+              document.getElementById("btnSubmit2").style.display="block";
 
-              document.getElementByID("mainImage").src = "images/awake.jpg"
+              document.getElementById("mainImage").src = "images/awake.jpg"
               myQuestion.innerHTML = "You remove the blindfold, but find that your wrists and ankles are shackled together.<br>The commotion has alerted your companions of your regained awareness. Ralof: Hey, you. You're finally awake. You were trying to cross the border, right? Walked right into that Imperial ambush, same as us, and that thief over there.<br>You glance to your side to see a skittish thief seated beside you.<br>Lokir: Damn you Stormcloaks. Skyrim was fine until you came along. Empire was nice and lazy. If they hadn't been looking for you, I could've stolen that horse and been half way to Hammerfell. You there. You and me -- we shouldnt be here. It's these Stormcloaks the Empire wants.<br> After a short conversation you arrive in a small village. The Imperials have decided your fate. You are sentenced to death.<br>";
             }
           else if(myChoice === "Stay")
@@ -35,16 +35,23 @@
 
         function getChoice2()
         {
-            var blindfold = document.getElementByID("choice2").value;
-            var myQuestion = document.getElementByID("question");
+            var blindfold = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
             if(route2 === "Remain")
             {
-              document.getElementByID("mainImage").src = "images/execution.jpg"
+              document.getElementById("choice2").style.display="none";
+              document.getElementById("btnSubmit2").style.display="none";
+
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+
+              document.getElementById("mainImage").src = "images/execution.jpg"
               myQuestion.innerHTML = "Lokir the thief tries to flee when the lot is sentences to death. He is swiftly shot through with Imperial arrows. <br>You resign yourself to your fate with the Stormcloaks and place your head upon the slab. <br>A dull roar can be heard growing in the distance.<br>Alduin perches himself upon the spires roof, his weight shaking the earth beneath him.<br>His sudden appearance and the fire pouring from his mouth halt the execution, everyone flees for their life.<br>";
             }
             else if(blindfold === "Run")
             {
-              document.getElementByID("mainImage").src = "images/dead.jpg"
+              document.getElementById("mainImage").src = "images/dead.jpg"
               myQuestion.innerHTML = "You try to run, but are quickly shot down.<br>You have died.";
             }
             else {
@@ -55,58 +62,89 @@
 
         function getChoice3()
         {
-          var execution = document.getElementByID("choice3").value;
-          var myQuestion = document.getElementByID("question");
+          var execution = document.getElementById("choice3").value;
+          var myQuestion = document.getElementById("question");
           if(route3 === "Stormcloak")
           {
-            document.getElementByID("mainImage").src = "stormcloak.jpeg"
-            myQuestion.innerHTML = "You are met by the Stormcloak you arrived with.<br>He offers to cut your bonds and lead you to the safety of a dungeon."
+            document.getElementById("choice3").style.display="none";
+            document.getElementById("btnSubmit3").style.display="none";
+
+            document.getElementById("choice4").style.display="block";
+            document.getElementById("btnSubmit4").style.display="block";
+
+
+            document.getElementById("mainImage").src = "images/stormcloak.jpeg"
+            myQuestion.innerHTML = "You are met by the Stormcloak you arrived with.<br>He offers to cut your bonds and lead you to the safety of a dungeon.";
           }
           else if(route3 ==="Imperial")
           {
-            document.getElementByID("mainImage").src = "imperial.jpg"
-            myQuestion.innerHTML = "You are met by an Imperial soldier.<br>He offers to cut your bonds and lead you to the safety of the stronghold."
+            document.getElementById("mainImage").src = "images/imperial.jpg"
+            myQuestion.innerHTML = "You are met by an Imperial soldier.<br>He offers to cut your bonds and lead you to the safety of the stronghold.";
           }
         }
         else {
-          myQuestion.innerHTML = "Invalid. Stormcloak or Imperial."
+          myQuestion.innerHTML = "Invalid. Stormcloak or Imperial.";
         }
 
         function getChoice4()
         {
-          var escape = document.getElementByID("choice4").value;
-          var myQuestion = document.getElementByID("question");
+          var escape = document.getElementById("choice4").value;
+          var myQuestion = document.getElementById("question");
           if(route4 === "StormCloak")
           {
-            document.getElementByID{"mainImage"}.src = "run.jpg"
-            myQuestion.innerHTML = "You rush to the dungeon with the Stormcloak rebel, barely avoiding dragon fire.<br>You hear the shout of distant Imperial soldier.<br>They warn of draugr.<br>Do you face the dangers ahead, or return to face Alduin?<br>"
+            document.getElementById("choice4").style.display="none";
+            document.getElementById("btnSubmit4").style.display="none";
+
+            document.getElementById("choice5").style.display="block";
+            document.getElementById("btnSubmit5").style.display="block";
+
+
+            document.getElementById{"mainImage"}.src = "images/run.jpg"
+            myQuestion.innerHTML = "You rush to the dungeon with the Stormcloak rebel, barely avoiding dragon fire.<br>You hear the shout of distant Imperial soldier.<br>They warn of draugr.<br>Do you face the dangers ahead, or return to face Alduin?<br>";
           }
           else if(route4 === "Imperial")
           {
-            document.getElementByID("mainImage").src = "run.jpg"
-            myQuestion.innerHTML = "You rush to the stronghold with the Imperial soldier, barely avoiding dragon fire. <br> You hear the shout of distant soldiers.<br>They warn of a Stormcloak skirmish.<br>Do you face the dangers ahead or return to face Alduin?<br>"
+            document.getElementById("mainImage").src = "images/run.jpg"
+            myQuestion.innerHTML = "You rush to the stronghold with the Imperial soldier, barely avoiding dragon fire. <br> You hear the shout of distant soldiers.<br>They warn of a Stormcloak skirmish.<br>Do you face the dangers ahead or return to face Alduin?<br>";
 
           }
           else {
-            myQuestion.innerHTML = "Invalid. Enter Onward or Alduin."
+            myQuestion.innerHTML = "Invalid. Enter Onward or Alduin.";
           }
         }
 
         function get Choice5()
         {
-          var finale = document.getElementByID("choice5").value;
-          var myQuestion = document.getElementByID("question");
+          var finale = document.getElementById("choice5").value;
+          var myQuestion = document.getElementById("question");
           if(route5 === "Onward")
           {
-            document.getElementByID("mainImage").src = "coolDog.jpg"
-            myQuestion.innerHTML = "You push onward, fighting any foe you come across.<br>You eventually reach your exit; just outside the small village you were taken to.<br>You hear the distant roar or Alduin as he flies to his next destination, leaving behind ruin.<br>Ahead of you is a great valley, in the distance a village. You've survived, Dragonborn."
+            document.getElementById("mainImage").src = "images/coolDog.jpg"
+            myQuestion.innerHTML = "You push onward, fighting any foe you come across.<br>You eventually reach your exit; just outside the small village you were taken to.<br>You hear the distant roar or Alduin as he flies to his next destination, leaving behind ruin.<br>Ahead of you is a great valley, in the distance a village. You've survived, Dragonborn.";
           }
           else if(route5 === "Alduid")
           {
-            document.getElementByID("mainImage").src = "dead.jpg"
-            myQuestion.innerHTML = "You turn your back on your rescuer, too afraid to go on.<br>You flee for your life but, you come face to face with the World Eater himself.<br>Alduin.<br>With one swift breath he turns your body to ash.<br>You have died."
+            document.getElementById("mainImage").src = "images/dead.jpg"
+            myQuestion.innerHTML = "You turn your back on your rescuer, too afraid to go on.<br>You flee for your life but, you come face to face with the World Eater himself.<br>Alduin.<br>With one swift breath he turns your body to ash.<br>You have died.";
+          }
+
+          else {
+            myQuestion.innerHTML = "Restart?";
           }
         }
+        function get Restart()
+        {var last = document.getElementById("Restart").value;
+        var myQuestion = document.getElementById("question");
+        if(finale === "Restart")
+        {
+          document.getElementById("mainImage").src = "images/adventure.png"
+          myQuestion.innerHTML = "question">
+        }
+
+        else
+
+
+      }
 
     </script>
   <body>
