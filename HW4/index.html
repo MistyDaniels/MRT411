@@ -8,9 +8,9 @@
     <script>
       function getChoice1()
         {
-          var firstChoice = document.getElementByID("choice").value;
+          var myChoice = document.getElementByID("choice").value;
           var myQuestion = document.getElementByID("question");
-          if(firstChoice === "Remove")
+          if(myChoice === "Remove")
             {
               document.getElementByID("choice").style.display="none";
               document.getElementByID("btnSubmit").style.display="none";
@@ -31,17 +31,17 @@
 
         }
 
-
+//Choice two
         function getChoice2()
         {
             var blindfold = document.getElementByID("choice2").value;
             var myQuestion = document.getElementByID("question");
-            if(myQuestion === "Remain")
+            if(route2 === "Remain")
             {
               document.getElementByID("mainImage").src = "images/awake.jpg"
               myQuestion.innerHTML = "TEXT";
             }
-            else if(blindfold ==="Run")
+            else if(blindfold === "Run")
             {
               document.getElementByID("mainImage").src = "images/dead.jpg"
               myQuestion.innerHTML = "You try to run, but are quickly shot down.<br>You have died.";
@@ -52,12 +52,13 @@
         }
     </script>
   <body>
-    <div id="firstChoice">
-      <h1>Dragonborn</h1>
-      <br>
-      <image src="images/adventure.png">
-      <br>
-      You awaken to darkness.
+
+        <h1>Dragonborn</h1>
+        <br>
+        <image src="images/adventure.png" id="mainImage">
+      <div id="question">
+          <br>
+          You awaken to darkness.
       <br>
       A blindfold blocks your vision, but by the jarring rocking motion you are aware of the fact youre seated within a moving cart.
       <br>
