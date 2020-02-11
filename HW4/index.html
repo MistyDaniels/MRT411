@@ -113,7 +113,7 @@
           }
         }
 
-        function get Choice5()
+        function getChoice5()
         {
           var finale = document.getElementById("choice5").value;
           var myQuestion = document.getElementById("question");
@@ -145,7 +145,7 @@
 
 
       }
-
+}
     </script>
   <body>
 
@@ -154,12 +154,12 @@
         <image src="images/adventure.png" id="mainImage">
       <div id="question">
       <br>
-      You awaken to darkness.
-      <br>
-      A blindfold blocks your vision, but by the jarring rocking motion you are aware of the fact youre seated within a moving cart.
-      <br>
-      The air is crisp and you can hear the hushed whispers of others around you.
-      </div>
+        You awaken to darkness.
+        <br>
+        A blindfold blocks your vision, but by the jarring rocking motion you are aware of the fact youre seated within a moving cart.
+        <br>
+        The air is crisp and you can hear the hushed whispers of others around you.
+        </div>
 
       <br>
     <input type="text" id="choice" size="20" value="Enter Remove or Stay">
@@ -173,6 +173,9 @@
 
     <input type="text" id="choice5" size="20" value="Enter Imperial or Stormcloak" style="display:none">
     <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Proceed</button>
+
+    <input type="text" id="Restart" size="20" value="Enter Restart" style="display:none">
+    <button id="btnSubmit6" onclick="Restart();" style="display:none">Proceed</button>
 
   </body>
 
