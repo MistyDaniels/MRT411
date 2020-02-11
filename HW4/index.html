@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <style>
         body {
@@ -8,13 +8,11 @@
     <script>
       function getChoice1()
         {
-          var firstChoice = document.getElementByID("choice1").value;
-          var myQuestion = document.getElementByID("question1");
-          console.log(firstChoice);
-
+          var firstChoice = document.getElementByID("choice").value;
+          var myQuestion = document.getElementByID("question");
           if(firstChoice === "Remove")
             {
-              document.getElementByID("choice1").style.display="none";
+              document.getElementByID("choice").style.display="none";
               document.getElementByID("btnSubmit").style.display="none";
 
               document.getElementByID("choice2").style.display="block";
@@ -22,30 +20,31 @@
 
               myQuestion.innerHTML = "You remove the blindfold, but find that your wrists and ankles are shackled together.<br>The commotion has alerted your companions of your regained awareness. Ralof: Hey, you. You're finally awake. You were trying to cross the border, right? Walked right into that Imperial ambush, same as us, and that thief over there.<br>You glance to your side to see a skittish thief seated beside you.<br>Lokir: Damn you Stormcloaks. Skyrim was fine until you came along. Empire was nice and lazy. If they hadn't been looking for you, I could've stolen that horse and been half way to Hammerfell. You there. You and me -- we shouldnt be here. It's these Stormcloaks the Empire wants.<br> After a short conversation you arrive in a small village. The Imperials have decided your fate. You are sentenced to death.<br>";
             }
-          else if(myChoice === "Stay")
+          else if(firstChoice === "Stay")
             {
               myQuestion.innerHTML = "You decide to leave your blindfold. Whatever trouble you're already in isnt worth making worse.<br>The rest of the group keeps their voices down, too low for you to hear.<br>The cart stops and you are suddenly pulled from it.Its difficult to determine what is going on, but someone is shouting orders.<br><br>It sounds as though you are in a great deal of trouble.<br>You are set upon a block and beheaded.<br>You have died.";
             }
-
           else
           {
             myQuestion.innerHTML = "Invalid. Remove or Stay.";
           }
 
-            }
-          }
         }
+
 
         function getChoice2()
         {
             var blindfold = document.getElementByID("choice2").value;
-            if(blindfold ==="Remain")
+            var myQuestion = document.getElementByID("question");
+            if(myQuestion === "Remain")
             {
+              document.getElementByID("mainImage").src = "images/awake.jpg"
               myQuestion.innerHTML = "TEXT";
             }
             else if(blindfold ==="Run")
             {
-              myQuestion.innerHTML = "TEXT";
+              document.getElementByID("mainImage").src = "images/dead.jpg"
+              myQuestion.innerHTML = "You try to run, but are quickly shot down.<br>You have died.";
             }
             else {
               myQuestion.innerHTML = "Invalid. Run or Remain.";
@@ -56,6 +55,8 @@
     <div id="firstChoice">
       <h1>Dragonborn</h1>
       <br>
+      <image src="images/adventure.png">
+      <br>
       You awaken to darkness.
       <br>
       A blindfold blocks your vision, but by the jarring rocking motion you are aware of the fact youre seated within a moving cart.
@@ -63,7 +64,7 @@
       The air is crisp and you can hear the hushed whispers of others around you.
       </div>
       <br>
-    <input type="text" id="choice1" size="20" value="Enter Remove or Stay">
+    <input type="text" id="choice" size="20" value="Enter Remove or Stay">
     <button id="btnSubmit" onclick="getChoice1();">Proceed</button>
 
     <input type="text" id="choice2" size="20" value="Enter Run or Remain" style="display:none">

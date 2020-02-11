@@ -12,3 +12,7 @@ It actually went a lot better than I thought; but I am struggling with naming
 conventions and retaining them in memory.
 For now I've decided to place them in a notepad file so I can use that for reference
 as I go along.
+
+Having some trouble getting my options to change. I think I'm still struggling with
+keeping the names in order. I don't know why thats so hard for me. May have to resort to
+drawing a simple graph so I can maintain some kind of order.
