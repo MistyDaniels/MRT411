@@ -1,0 +1,48 @@
+<html>
+<head>
+
+  <script>
+
+    //first Array
+
+    function printArray()
+    {
+      var line1 = new Array ["images/white.png", "images/white.png", "images/white.png", "images/white.png", "images/white.png"];
+      var allGrid = "";
+      for(var i = 0; i < grid1.length; i++)
+      {
+          allGrid += grid1[i] + "<br>";
+      }
+      document.getElementById("firstGrid").innerHTML = grid1;
+    }
+
+    //second Array
+
+    function printArray()
+    {
+      var line2 = new Array ["images/white.png", "images/white.png", "images/white.png", "images/white.png", "images/white.png"];
+      var allGrid2 = "";
+      for(var i = 0; i < grid2.length; i++)
+      {
+          allGrid2 += grid2[i] + "<br>";
+      }
+      document.getElementById("secondGrid").innerHTML = grid2;
+    }
+
+
+
+  </script>
+
+
+</head>
+<body onload="printArray();">
+  <div id="firstGrid"></div>
+
+<br>
+
+  <body onload="printArray();">
+    <div id="secondGrid"></div>
+
+
+</body>
+</html>
