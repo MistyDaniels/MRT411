@@ -7,24 +7,24 @@
 
     function printArray()
     {
-      var line1 = new Array['images/white.png', 'images/white.png', 'images/white.png', 'images/white.png', 'images/white.png'];
+      var line1 = new Array("images/white0.png", "images/white1.png", "images/white2.png", "images/white3.png", "images/white4.png");
       var allGrid = "";
-      for(var i = 0; i < grid1.length; i++)
+      for(var i = 0; i < line1.length; i++)
       {
-          allGrid += grid1[i] + "<br>";
+          allGrid += line1[i] + "<br>";
       }
       document.getElementById("firstGrid").innerHTML = allGrid;
     }
 
     //second Array
 
-    function printArray()
+    function printArray2()
     {
-      var line2 = new Array["images/white.png", "images/white.png", "images/white.png", "images/white.png", "images/white.png"];
+      var line2 = new Array("images/white5.png", "images/white6.png", "images/white7.png", "images/white8.png", "images/white9.png");
       var allGrid2 = "";
-      for(var i = 0; i < grid2.length; i++)
+      for(var i = 0; i < line2.length; i++)
       {
-          allGrid2 += grid2[i] + "<br>";
+          allGrid2 += line2[i] + "<br>";
       }
       document.getElementById("secondGrid").innerHTML = allGrid2;
     }
@@ -38,7 +38,7 @@
 
 <br>
 
-  <body onload="printArray();">
+  <body onload="printArray2();">
     <div id="secondGrid"></div>
 
 
