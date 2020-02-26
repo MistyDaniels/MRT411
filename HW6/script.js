@@ -88,7 +88,7 @@ function addPlayer()
     player.lastname = lastName;
     player.age = age;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "page1.html";
+    window.location = "page2.html";
 }
 
 function playerInfo()
