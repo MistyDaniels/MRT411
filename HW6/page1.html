@@ -8,25 +8,29 @@
 
 <body onload="printWhite();">
 <!--Practicing using the provided example-->
+<h2>Memory Matching Practice</h2>
 
-    <div class="divTable">
-        <div class="divTableBody">
-            <div class="divTableRow">
-              <div class="divTableCell"><img src="" id="image0" width="100" height="100" onclick="flipImage(0);"></div>
-              <div class="divTableCell"><img src="" id="image1" width="100" height="100" onclick="flipImage(1);"></div>
-              <div class="divTableCell"><img src="" id="image2" width="100" height="100" onclick="flipImage(2);"></div>
-              <div class="divTableCell"><img src="" id="image3" width="100" height="100" onclick="flipImage(3);"></div>
-              <div class="divTableCell"><img src="" id="image4" width="100" height="100" onclick="flipImage(4);"></div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell"><img src="" id="image5" width="100" height="100" onclick="flipImage(5);"></div>
-                <div class="divTableCell"><img src="" id="image6" width="100" height="100" onclick="flipImage(6);"></div>
-                <div class="divTableCell"><img src="" id="image7" width="100" height="100" onclick="flipImage(7);"></div>
-                <div class="divTableCell"><img src="" id="image8" width="100" height="100" onclick="flipImage(8);"></div>
-                <div class="divTableCell"><img src="" id="image9" width="100" height="100" onclick="flipImage(9);"></div>
-            </div>
+<br>
+
+<div class="divTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">First Name</div>
+            <div class="divTableCell"><input type="text" id="FirstName"></div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">Last Name</div>
+            <div class="divTableCell"><input type="text" id="LastName"></div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">Players Age</div>
+            <div class="divTableCell"><input type="text" id="Age"></div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell"><button id="btnSubmit" onclick="addPlayer();">Continue...?</button></div>
         </div>
     </div>
+</div>
 
 </body>
 

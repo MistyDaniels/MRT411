@@ -11,6 +11,12 @@ Alright I think I have the hang of things. The examples in the class videos are 
 I had a little trouble with the onclick event for some reason, but I think I got that figured out. I'm working on the JSON right now, it seems straight forward enough.
 The preview package has really been helping with this but I want to run it right now in the browser juuust in case.
 
+OK SO THAT MOSTLY WORKED! SUCCESS! SORT OF!
+I really want to figure out how to reset the boxes so they revert back to white/blanks when I choose incorrectly but that may be a project for another day. I'm still happy with how well it turned out for a first try!
+
+It didnt, however, progress past the point of all of the boxes being selected to display my information. HRM.
+
+
 
 
 
