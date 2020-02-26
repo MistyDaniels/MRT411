@@ -16,7 +16,9 @@ I really want to figure out how to reset the boxes so they revert back to white/
 
 It didnt, however, progress past the point of all of the boxes being selected to display my information. HRM.
 
-IM A BIG DUMB IDIOT AND FORGOT TO ACTUALLY SAVE THE UPDATES I MADE SO THATS WHY IT WASNT WORKING. oof. 
+IM A BIG DUMB IDIOT AND FORGOT TO ACTUALLY SAVE THE UPDATES I MADE SO THATS WHY IT WASNT WORKING. oof.
+
+One step forward and two steps back, it feels like. It will no longer progress past page1.html I think its not linked properly but Im just not seeing it. 
 
 
 

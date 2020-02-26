@@ -10,9 +10,9 @@ var actualImages = new Array();
 
 function printWhite()
     createRandomImageArray();
-    for(var i = 0; i < imageNames.length; i++)
+    for(var i = 0; i < imageTags.length; i++)
     {
-        document.getElementById(imageNames[i]).src= blankImagePath;
+        document.getElementById(imageTags[i]).src= blankImagePath;
     }
 
 }
@@ -37,13 +37,13 @@ function flipImage(number)
     if(firstNumber >= 0)
     {
         secondNumber = number;
-        document.getElementById(imageNames[number]).src = actualImages[secondNumber];
+        document.getElementById(imageTags[number]).src = actualImages[secondNumber];
 
     }
     else if(firstNumber < 0)
     {
         firstNumber = number;
-        document.getElementById(imageNames[firstNumber]).src= actualImages[firstNumber];
+        document.getElementById(imageTags[firstNumber]).src= actualImages[firstNumber];
 
     }
 
@@ -72,8 +72,8 @@ function imagesDisappear()
 {
 
     console.log(firstNumber);
-    document.getElementById(imageNames[firstNumber]).src = blankImagePath;
-    document.getElementById(imageNames[secondNumber]).src = blankImagePath;
+    document.getElementById(imageTags[firstNumber]).src = blankImagePath;
+    document.getElementById(imageTags[secondNumber]).src = blankImagePath;
     firstNumber = -1;
     secondNumber = -1;
 }
@@ -93,8 +93,8 @@ function addPlayer()
 
 function playerInfo()
 {
-    var playerInformation = localStorage.getItem("playerInfo");
-    player = JSON.parse(playerInformation);
+    var playerInfo = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInfo);
     var str = "Name: " + player.firstname + " " + player.lastname + "<br>" +
     "Age: " + player.age + "<br>" +
     "Score: " + player.score;
