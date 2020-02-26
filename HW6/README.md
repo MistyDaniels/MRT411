@@ -7,6 +7,9 @@ I do want to say I went with some pretty simple designs honestly. I wanted to us
 
 I FIGURED IT OUT I FORGOT TO ADD THE REST OF THE IMAGE TAGS IM SUCH A DOOFUS.
 
+Alright I think I have the hang of things. The examples in the class videos are a godsend. I was able to kind of sort of grasp what I should be working towards.
+I had a little trouble with the onclick event for some reason, but I think I got that figured out. I'm working on the JSON right now, it seems straight forward enough.
+The preview package has really been helping with this but I want to run it right now in the browser juuust in case.
 
 
 
