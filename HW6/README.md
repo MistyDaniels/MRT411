@@ -16,7 +16,7 @@ I really want to figure out how to reset the boxes so they revert back to white/
 
 It didnt, however, progress past the point of all of the boxes being selected to display my information. HRM.
 
-
+IM A BIG DUMB IDIOT AND FORGOT TO ACTUALLY SAVE THE UPDATES I MADE SO THATS WHY IT WASNT WORKING. oof. 
 
 
 
