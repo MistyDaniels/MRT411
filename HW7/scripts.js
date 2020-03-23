@@ -2,50 +2,24 @@ var myViewFinderArray = new Array();
 
 class ViewFinder
 {
-    constructor(title)
+    constructor( title, image, description, author, year )
     {
         this.title = title;
         this.image = image;
-        this.description = description;
+        this.decription = description;
         this.author = author;
         this.year = year;
     }
 
     toString()
     {
-        return "Title: " + this.title;
-        return "Image: " + this.image;
-        return "Description: " + this.description;
-        return "Author: " + this.author;
-        return "Year: " + this.year;
+        let str;
+        str = 'This piece is titled ' + this.title
+        + this.image + ' featuring ' + this.description
+        + ' by artist ' + this.artist + ' in' + this.year;
+        return str;
     }
 
-    get title()
-    {
-        return this.title;
-    }
-
-    get image()
-      {
-        return this.image;
-      }
-
-    get description()
-    {
-      return this.description;
-    }
-
-    get author()
-    {
-      return this.author;
-    }
-
-    get year()
-    {
-      return this.year;
-    }
-
-}
 
 function initializeArray()
 {
@@ -63,6 +37,6 @@ function initializeArray()
 }
 function accessInformation()
 {
-    document.getElementById("title" + "Image" + "Description" + "Author" + "Year").innerHTML = myViewFinderArray[1].toString();
+    document.getElementById('title' + 'Image' + 'Description' + 'Author' + 'Year').innerHTML = myViewFinderArray[5].toString();
 
 }
