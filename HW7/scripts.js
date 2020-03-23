@@ -1,3 +1,22 @@
+var imageTags = ["aurorae", "burnish2", "deepblue", "jelly", "pipestone"];
+var firstNumber = -1;
+var secondNumber = -1;
+
+function createRandomImageArray()
+{
+    var actualImagePath = ["images/aurorae.jpg", "images/burnish2.jpg", "images/deepblue.jpg", "images/jelly.jpg", "images/pipestone.jpg"];
+    var count = [0,0,0,0,0];
+    while(actualImages.length < 5)
+    {
+        var randomNumber = Math.floor(Math.random() * actualImagePath.length)
+        if(count[randomNumber] < 1)
+        {
+            actualImages.push(actualImagePath[randomNumber]);
+            count[randomNumber] = count[randomNumber] + 1;
+        }
+    }
+}
+
 var myViewFinderArray = new Array();
 
 class ViewFinder
