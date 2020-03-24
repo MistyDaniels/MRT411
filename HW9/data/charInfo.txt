@@ -1,0 +1,5 @@
+<character>
+	<season>One</season>
+	<episode>One</episode>
+	<name>Rick Sanchez</name>
+</character>
