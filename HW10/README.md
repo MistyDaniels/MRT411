@@ -9,3 +9,8 @@ I may try to move it BACK to the HTML file. I guess it is HTML5 we're working on
 so it would make more sense that it was there?
 
 wHY IS MY SQUARE BLACK?
+Ok-ok ok. I think I have the player controlled piece figured out. Now to just
+wangjangle the autonomous piece!
+
+I was worried about messing up my original index file, so I did end up making
+a practice html file for now. I'll use it to test some theories without altering the original too much. I also nixed the JS file for now since I'm having and easier time using the script tag in the html file.
