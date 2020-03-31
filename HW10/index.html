@@ -1,13 +1,34 @@
 <html>
-<head>
-  <script src="scripts/script.js"></script>
-  <link rel="stylesheet" href="styles/main.css" text="text/css">
-    <style type="text/css">
+    <head>
+    </head>
+    <style>
+        #drawnCanvas{
+            border:red;
+            border-style: solid;
+            border-width: 2px;
+        }
     </style>
-</head>
-<body>
-    <canvas id="canvas" width="500" height="500"></canvas>
-    <!-- Royalty free audio from Fesliyan Studios -->
+    <body>
+        <canvas id="drawnCanvas" height="600" width="500"></canvas>
+
+        <script>
+            var canvas = document.getElementById("drawnCanvas");
+            var ctx = canvas.getContext("2d");
+            var x = 50;
+            var y = 50;
+            ctx.fillStyle = "#FF0000";
+            drawSquare();
+
+            function drawSquare()
+            {
+                ctx.clearRect(0,0,500,600);
+                ctx.fillRect(x, y, 20, 20);
+            }
+
+        </script>
+        <br>
     <audio id="song" src="sound/8bitMenu.mp3" controls="controls">
     </audio>
-</body>
+
+    </body>
+</html>
