@@ -6,7 +6,7 @@ var square1, square2;
 var direction;
 var questions;
 var squareArray = [];
-var lives = 5;
+var score = 0;
 $(document).ready(function(){
   setup();
   $(this).keypress(funcion(event){
@@ -104,6 +104,17 @@ function getKey(event)
     }
   }
 
+  if (
+    square1.x <= (square2.x)
+    && square2.x <= (square1.x)
+    && square1.y <= (square2.y)
+    && square2.y <= (square1.y)
+  ) {
+    ++squaresCaught;
+    reset();
+  }
+
+
   function drawSquare()
   {
     ctx.clearRect(0,0,800,600);
@@ -118,8 +129,14 @@ function getKey(event)
     }
   }
 
-  ctx.font = "50px Arial";
-  ctx.fillText("Lives: " + lives, 10, 50);
+  ctx.fillStyle = "rgb(250, 250, 250)";
+  ctx.font = "50px Helvetica";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+  ctx.fillText("Score: " + score, 20, 20);
+  if(finished==true){
+    ctx.fillText("Game over!", 200, 220);
+}
 
 //DONT FORGET TO FIX GETTERS
 function hasCollided(object1, Object2) {
