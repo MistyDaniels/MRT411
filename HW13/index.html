@@ -4,60 +4,105 @@
         <meta charset="utf-8">
         <title>My first three.js app</title>
         <style>
-            body { margin: 0; }
-            canvas { display: block; }
+            body {
+                font-family: Monospace;
+                background-color: #000000;
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            #info {
+                color: #fff;
+                position: absolute;
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                z-index: 100;
+                display:block;
+
+            }
+
+            a { color: grey }
         </style>
+
     </head>
     <body>
-        <script src="js/three.js"></script>
-        <script src="js/GLTFLoader.js"></script>
-        <script>
-        var scene = new THREE.Scene()
-        scene.overrideMaterial = new THREE.MeshBasicMaterial({
-            color: 'green'
-        });
-        scene.background = new THREE.Color('grey');
-        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, .1, 1000)
-        var renderer = new THREE.WebGLRenderer()
-        camera.position.x = 100
-        camera.position.y = -100
-        camera.position.z = 590
+      <script src="js/three.min.js"></script>
+
+      <script src="http://threejs.org/examples/js/loaders/STLLoader.js"></script>
+
+      <script>
+
+          var container, camera, scene, renderer;
+
+          init();
+          animate();
+
+          function init() {
+
+              container = document.createElement( 'div' );
+              document.body.appendChild( container );
+
+              renderer = new THREE.WebGLRenderer( { antialias: true } );
+              renderer.setSize( window.innerWidth, window.innerHeight );
+              container.appendChild( renderer.domElement );
+
+              scene = new THREE.Scene();
+
+              camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 10000 );
+              camera.position.set( 3, 0.5, 3 );
+              scene.add( camera );
 
 
-        renderer.setClearColor(0xdddddd)
-        renderer.setSize(window.innerWidth, window.innerHeight)
+              var light = new THREE.PointLight( 0xffffff, 0.8 );
+              camera.add( light );
 
-        document.body.appendChild(renderer.domElement)
-        var loader = new THREE.GLTFLoader();
+              var loader = new THREE.STLLoader();
+              loader.load( 'Helmet.stl', function ( geometry ) {
 
-        // change to the name of your glb
-        loader.load('CoolTrug.glb', function(gltf) {
+                  var material = new THREE.MeshPhongMaterial( { color: 0xff5533 } );
 
-            scene.add(gltf.scene);
+                  var mesh = new THREE.Mesh( geometry, material );
 
-        }, undefined, function(error) {
+                  scene.add( mesh );
 
-            console.error(error);
+              } );
 
-        });
-        var rotation = 0
+              window.addEventListener( 'resize', onWindowResize, false );
 
-        function spinCamera() {
-            rotation += 0.001
-            camera.position.z = Math.sin(rotation) * 80;
-            camera.position.x = Math.cos(rotation) * 80;
-            camera.lookAt(scene.position)
-        }
-        var render = function() {
+          }
 
-            requestAnimationFrame(render);
-            spinCamera();
+          function onWindowResize() {
 
-            renderer.render(scene, camera);
-        };
+              camera.aspect = window.innerWidth / window.innerHeight;
 
-        render();
+              camera.updateProjectionMatrix();
 
-        </script>
+              renderer.setSize( window.innerWidth, window.innerHeight );
+
+          }
+
+          function animate() {
+
+              requestAnimationFrame( animate );
+
+              render();
+
+          }
+
+          function render() {
+
+              var timer = Date.now() * 0.0005;
+
+              camera.position.x = Math.cos( timer ) * 5;
+              camera.position.z = Math.sin( timer ) * 5;
+
+              camera.lookAt( scene.position );
+
+              renderer.render( scene, camera );
+
+          }
+
+      </script>
     </body>
 </html>
