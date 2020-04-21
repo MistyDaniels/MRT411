@@ -33,6 +33,14 @@
 
       <script>
 
+          window.onload = function(){
+            var helmet = new Helmet({
+              target: 'target',
+              data: 'stl/Helmet.stl',
+              path: './src'
+            })
+          }
+
           var container, camera, scene, renderer;
 
           init();
@@ -104,5 +112,6 @@
           }
 
       </script>
+      <div id="target" class="helmet"></div>
     </body>
 </html>
