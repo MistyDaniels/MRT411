@@ -14,11 +14,10 @@ body{
 }
 
 .book-viewport .container{
-	position: absolute;
-	top:2000px;
-	right: 200px;
-	width: 200px;
-	height: 200px;
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin:auto;
 }
 
 .book-viewport .book{
