@@ -10,7 +10,33 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="scripts/script.js"></script>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="data/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="data/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript">
+
+    function loadApp() {
+    	$('.book').turn({
+    			width:922,
+    			height:600,
+    			elevation: 50,
+    						gradients: true,
+    			autoCenter: true
+    	});
+    }
+
+    yepnope({
+    	test : Modernizr.csstransforms,
+    	yep: ['libs/turn.js'],
+    	nope: ['libs/turn.html4.min.js'],
+    	both: ['styles/basic.css'],
+    	complete: loadApp
+    });
+
+    </script>
+
+</script>
+
 </head>
 
 <body>
@@ -26,7 +52,11 @@
 
     <div class="menu" id="about-veil">
         <h2>Pierce The Veil</h2>
+<br>
+
+<br>
         <div class="menu-group-container">
+
 
             <div class="menu-group">
 
@@ -36,6 +66,7 @@
                     <div class="menu-item">Info about game</div>
                 </div>
             </div>
+
 
 
             <div class="menu-group">
@@ -48,5 +79,26 @@
     </div>
 
     <!-- End Menu -->
+
+    <!-- Gallery/Book -->
+    <br>
+    <br>
+    <div class="book-viewport">
+    	<div class="container">
+    		<div class="book">
+    			<div style="background-image:url(images/veilcover.png)"></div>
+    			<div style="background-image:url(images/COVER.png)"></div>
+    			<div style="background-image:url(images/controller.png)"></div>
+    			<div style="background-image:url(images/elements.png)"></div>
+    			<div style="background-image:url(images/vis.png)"></div>
+    			<div style="background-image:url(images/ghouly.png)"></div>
+    			<div style="background-image:url(images/finalhud.png)"></div>
+    		</div>
+    	</div>
+    </div>
+    <br>
+    <br>
+
+    <!-- End Book -->
 
 </body>

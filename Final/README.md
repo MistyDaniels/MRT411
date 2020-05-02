@@ -14,3 +14,9 @@ Got a pretty solid base so far. I want to get this all done before I get
 down the knitty gritty of the rest that I know I'll struggle with.
 So far I'm having some trouble getting my background to actual appear but
 I think its just a matter of fixing a link or a small misstep in my styles.
+
+OH BIG STEP! I found this cool code on github when I was looking for resources!
+https://github.com/blasten/turn.js/
+Its great because I think I can use this perfectly! The main thing is none of my
+images are the same size! I'm hoping it'll still work and I can just set the size or
+worst case scenario I can manually resize each image!
