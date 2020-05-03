@@ -22,14 +22,14 @@ body{
 
 .book-viewport .book{
 	width:1500px;
-	height:200px;
+	height:600px;
 	left:-461px;
 	top:-300px;
 }
 
 .book-viewport .page{
 	width:750px;
-	height:200px;
+	height:600px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
