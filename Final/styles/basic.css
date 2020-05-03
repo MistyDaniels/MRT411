@@ -71,7 +71,7 @@ body{
 body {
     padding: 0;
     margin: 0;
-    background-image: url("../images/forestaesthetic.jpg");
+    background-image: url("../images/treesNight.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@ body {
 .hero {
     height: 100vh;
     min-height: 740px;
-    background-image: url("../images/veilcover.png");
+    background-image: url("../images/roots.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;

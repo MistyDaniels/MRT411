@@ -20,3 +20,7 @@ https://github.com/blasten/turn.js/
 Its great because I think I can use this perfectly! The main thing is none of my
 images are the same size! I'm hoping it'll still work and I can just set the size or
 worst case scenario I can manually resize each image!
+
+I can't get my containers to stop floating over each other >C I've looked online and I keep finding information about centering and shifting text but nothing for the containers themselves. I just need to move the containers.. containing my text. Hh. I'm sure its somethings stupid obvious.
+
+The power went out and I lost anything I forgot to save, but I dont remember what that was so hopefully it wasn't important.
