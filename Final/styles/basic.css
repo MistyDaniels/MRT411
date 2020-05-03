@@ -241,3 +241,8 @@ body {
     text-align: left;
     font-style: normal;
 }
+
+
+audio {
+	display:none;
+}
