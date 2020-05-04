@@ -178,7 +178,7 @@ body{
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:100%;
+	top:80%;
 	left:50%;
 	margin:auto;
 }
