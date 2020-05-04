@@ -27,3 +27,6 @@ The power went out and I lost anything I forgot to save, but I dont remember wha
 
 I couldn't figure it out so I went a different route with the flipbook code.
 I'm still having the same trouble with the hero image, where my flipbook keeps floating over it and I cant fix it. I'm thinking of maybe moving the hero image down?
+
+I changed the padding on the hero images and some of the dimensions and such of the flipbook and it works fine on Chrome and IE. Unfortunately I tried it on mobile and it looks really funky on Samsung Internet and doesn't really load on the other mobile explorer. Annoying. I thought it could be the flipbook doens't do well in mobile BUT the background and hero image doesn't load either so I'm not sure what's going on with that.
+I think I'm just going to have to call it for now!
