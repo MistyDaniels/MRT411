@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Misty Daniels</title>
+	<meta name="author" content="Misty Daniels`">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="data/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="data/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div class="page" style="background-image:url(pages/1.png)"></div>
+			<div class="double" style="background-image:url(pages/11.png)"></div>
+			<div class="page" style="background-image:url(pages/4.png)"></div>
+			<div class="page" style="background-image:url(pages/5.png)"></div>
+			<div class="page" style="background-image:url(pages/6.png)"></div>
+			<div class="page" style="background-image:url(pages/7.png)"></div>
+			<div class="double" style="background-image:url(pages/10.png)"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	var flipbook = $('.flipbook');
+
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+
+	$('.flipbook .double').scissor();
+
+	$('.flipbook').turn({
+			elevation: 50,
+			gradients: true,
+			autoCenter: true
+	});
+}
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['libs/turn.min.js'],
+	nope: ['libs/turn.html4.min.js'],
+	both: ['libs/scissor.min.js', 'styles/double-page.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
