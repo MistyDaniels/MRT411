@@ -9,7 +9,7 @@ body {
 }
 
 .description-container {
-    min-height: 50vh;
+    min-height: vh;
     font-size: 2em;
 }
 
@@ -178,7 +178,7 @@ body{
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:50%;
+	top:75%;
 	left:50%;
 	margin:auto;
 }
