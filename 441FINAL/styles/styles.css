@@ -45,7 +45,7 @@ body {
     font-size: 22pt;
     color: #fff;
     float: center;
-    margin-top: 170px;
+    margin-top: 150px;
     margin-left: 1em;
     margin-right: 1em;
     padding: 2em;
@@ -62,36 +62,6 @@ body {
     font-weight: 300;
     font-style: italic;
     line-height: 0.5em;
-}
-
-.hero .nav {
-    font-style: italic;
-    font-weight: 300;
-    color: #fff;
-    margin-top: 2em;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-}
-
-.hero .nav a {
-    flex-grow: 1;
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero .nav-item {
-    font-size: 0.5em;
-    padding: 0.5em 1em;
-    margin: 0 0.5em;
-    text-align: center;
-    border: 1px solid #b9bddf;
-    border-width: 1px 0;
-}
-
-.hero .nav-item:hover {
-    color: #fff;
-    background-color: rgba(25, 75, 100, 0.5);
 }
 
 
@@ -121,45 +91,6 @@ body {
     }
 }
 
-/* Menu */
-.menu {
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 2em;
-    background-color: rgb(36, 37, 84);
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.5em;
-    text-align: center;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, .8);
-}
-
-
-.menu .menu-group-container {
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
-    justify-content: space-around;
-}
-
-
-.menu .menu-group {
-    padding: 1em;
-    min-width: 300px;
-    max-width: 500px;
-}
-
-.menu .menu-head {
-    font-style: sans-serif;
-    font-size: 2em;
-    padding: 1em;
-}
-
-.menu .menu-item {
-    text-align: left;
-    font-style: normal;
-}
-
 
 /* Paging effect */
 
@@ -178,7 +109,7 @@ body{
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:80%;
+	top:75%;
 	left:50%;
 	margin:auto;
 }
